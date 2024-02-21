@@ -1,0 +1,38 @@
+test_info:
+  title: anti_virus
+  host: ${host}
+  is_saas: ${is_saas}
+  scheme: ${scheme}
+  method: GET
+  address: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy
+  address_saas: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy
+  mime_type:
+  headers: ${headers}
+  timeout: ${timeout}
+  file: false
+  cookies: false
+  premise: false
+test_case:
+- summary: 测试【/api/admin/v2/dynamic_security/anti_virus/strategy】[GET]接口
+  describe: 已登录管理员账号-查看防病毒策略列表
+  script:
+  order: 2999
+  markers:
+  - saas
+  - private
+  - seal
+  set_cache:
+  replace_cache:
+  parameter:
+    limit: '10'
+    offset: '0'
+    order_by: updated_at
+    os: web
+  check_body:
+    check_type: check_json
+    expected_code: 200
+    expected_result:
+      code: 0
+      action: ''
+      message: ''
+      data: {}

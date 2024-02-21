@@ -1,0 +1,50 @@
+test_info:
+  title: user
+  host: ${host}
+  scheme: ${scheme}
+  method: POST
+  address: :${admin_port}/api/admin/user/add
+  address_saas: :${admin_port}/api/admin/user/add
+  mime_type: application/json
+  headers: ${headers}
+  timeout: ${timeout}
+  file: false
+  cookies: false
+  premise: false
+test_case:
+- summary: 测试【/api/admin/user/add】接口
+  describe: 已登录管理员账号-创建新用户A
+  script:
+  order: 2
+  markers:
+  - saas
+  - private
+  - seal
+  set_cache:
+    apitest_user_mobile: test_case:$..mobile
+    apitest_user_uid: response_body:$..user_id
+  replace_cache:
+    test_case:$..department_id: root_department_id
+    test_case:$..department_path: root_department_path
+  parameter:
+    invite_type: 0
+    need_mfa: false
+    user:
+      full_name: apitest_antivirus_$GenStr()
+      departments:
+      - open_id: ''
+        type: 2
+        department_path:
+        user_count:
+        last_source:
+        department_id:
+      mobile: $GenPhone()
+      roles: []
+  check_body:
+    check_type: check_json
+    expected_code: 200
+    expected_result:
+      code: 0
+      action: ''
+      message: ''
+      data: type:object

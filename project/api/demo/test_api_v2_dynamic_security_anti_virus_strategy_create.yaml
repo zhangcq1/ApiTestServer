@@ -1,0 +1,90 @@
+test_info:
+  title: anti_virus
+  host: ${host}
+  scheme: ${scheme}
+  method: POST
+  address: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy
+  address_saas: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy
+  mime_type: application/json
+  headers: ${headers}
+  timeout: ${timeout}
+  file: false
+  cookies: false
+  premise: false
+test_case:
+- summary: 测试【/api/admin/v2/dynamic_security/anti_virus/strategy】[POST]接口
+  describe: 已登录管理员账号-创建防病毒策略
+  script:
+  order: 1999
+  markers:
+  - saas
+  - private
+  - seal
+  set_cache:
+    antivirus_strategy_key: response_body:$..key
+  replace_cache:
+    test_case:$..user_ids[0]: apitest_user_uid
+  parameter:
+    enable: true
+    scope:
+      dimension: user
+      user:
+        user_ids:
+        - 9999
+        role_ids: []
+        depart_ids: []
+      device:
+    name: apitest_av_$GenStr()
+    priority: 100
+    detect_items:
+    - item_level: 1
+      item_type: virus
+    - item_level: 1
+      item_type: trojan
+    - item_level: 1
+      item_type: hack_tool
+    - item_level: 1
+      item_type: exploit
+    - item_level: 1
+      item_type: backdoor
+    - item_level: 1
+      item_type: phishing
+    - item_level: 1
+      item_type: miner
+    - item_level: 1
+      item_type: adware
+    - item_level: 1
+      item_type: evil_email
+    - item_level: 1
+      item_type: ransom
+    - item_level: 1
+      item_type: malware
+    detect_method:
+      enabled_methods:
+      - regular_inspection
+      - realtime_protection
+      regular_inspection:
+        scan_mode:
+        - 1
+        - 2
+        is_custom_scan: false
+        scan_frequency:
+          daily_count: 1
+          start_time: 0
+          end_time: 23
+      realtime_protection:
+        protect_scene:
+        - 1
+        - 5
+        - 4
+    remediation:
+      all_remediation: 1
+  check_body:
+    check_type: check_json
+    expected_code: 200
+    expected_result:
+      code: 0
+      action: ''
+      message: ''
+      data:
+        key: 0ee10ee2-1f10-497f-9141-c544b62daaf9

@@ -1,0 +1,24 @@
+LDAP:
+  host: 180.184.138.166
+  port: 389
+  schema: ldap
+  username: cn=admin,dc=corplink,dc=com
+  password: corplink.sec
+  base_dn: dc=upload,dc=corplink,dc=com
+  sync_down_base_dn: dc=download,dc=corplink,dc=com
+feishu:
+  host: open.feishu.cn
+  app_id: cli_a297072c5978900e
+  app_secret: OyAFKFA2udAuRBZIWJjzahBHNjQdgua3
+  open_department_id: od-d1344169922606f238e4514cc0501f2b
+  open_department_name: Auto test-don’t move
+weixin:
+  app_id: wwce90463a684f5182
+  app_secret: bSU1UQZwUEyDcjbwqhGpApUFBAaEbbpRABQGLvd_K4g
+  base_secret: Az1kQxyXgxEIzdDBV65v5UHLtFh_sYEgUUOS2q-8g8w
+  open_department_id: 198
+tokens:
+  feishu: t-g1041ubf3VX3222FM4PA3ELVGZASW4NR7QHQIGRH
+  weixin: qdTQ2x3KAgi6XNb19-CuPpZqnxbbEsHX8YvYHSRV_wWYNkT2ZpN3zYsmUc1lgWnBBFV3C_3XgGlHpDM8aExYxgGhD9HdI60GTjGLTpLtg41tK9mVowzfKlzo4hs-o9Zn2u7chyhmMpjEg6VLhFzLFtAPfAE9bEVBAB0rYUtiBu6GNu5rDuif4SyX7ULFQXhJuPJwqFVJaE8md-33yBoEDQ
+  authing: null1
+  dingtalk: null

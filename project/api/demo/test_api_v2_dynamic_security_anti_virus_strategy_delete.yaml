@@ -1,0 +1,36 @@
+test_info:
+  title: strategy
+  host: ${host}
+  scheme: ${scheme}
+  method: DELETE
+  address: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy/${antivirus_strategy_key}
+  address_saas: :${admin_port}/api/admin/v2/dynamic_security/anti_virus/strategy/${antivirus_strategy_key}
+  mime_type:
+  headers: ${headers}
+  timeout: ${timeout}
+  file: false
+  cookies: false
+  premise: false
+test_case:
+- summary: 测试【/api/admin/v2/dynamic_security/anti_virus/strategy/:strategy_key】接口
+  describe: 已登录管理员账号-删除防病毒策略
+  script:
+  order: 4999
+  markers:
+  - saas
+  - private
+  - seal
+  set_cache:
+  replace_cache:
+  parameter:
+    language: zh-CN
+    os: web
+  check_body:
+    check_type: check_json
+    expected_code: 200
+    expected_result:
+      code: 0
+      action: ''
+      message: ''
+      data:
+        result: success

@@ -1,0 +1,578 @@
+cache:
+  third:
+  identity:
+#    identity_chrome_admin_headers: 管理员测试用户浏览器登录态 -todo
+#    identity_chrome_normal_headers: 普通测试用户浏览器登录态 -todo
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    root_department_openid: 根部门openid
+    profile_id: 拓展字段profile_id
+    employee_a_mobile: 新建测试用户A 手机号
+    employee_a_uid: 新建测试用户A id
+    employee_a_user_id: 新建测试用户A user_id
+    employee_a_oid: 新建测试用户A openid
+    employee_a_start_password: 新建测试用户A 初始密码
+    iam_auto_test_user_uid: 自动化登录测试用户ID
+    iam_auto_test_user_mobile: 自动化登录测试用户手机号
+    iam_auto_test_user_email: 自动化登录测试用户邮箱
+    iam_auto_test_user_oid: 自动化登录测试用户open_id
+    iam_auto_test_user_id: 自动化登录测试用户user_id
+    iam_auto_test_user_start_password: 自动化登录测试用户初始密码
+    iam_auto_email_code: 邮箱验证码
+    iam_auto_test_sync_id: 数据源同步ID
+    iam_auto_test_sync_variable_name: 数据源同步任务ID
+    iam_auto_test_sync_ldap_dpt_id: 获取LDAP部门ID
+    iam_auto_test_sync_ldap_dpt_name: 获取LDAP部门名字
+    iam_auto_test_sync_open: 已经打开的数据源同步配置
+    iam_auto_test_sync_module: 获取模板内容并保存供order35使用
+    iam_auto_test_sync_template: 获取数据源配置模板
+    iam_auto_test_sync_ldap_attribute_mappings:
+    identity_auto_test_third_user_info_feishu:
+    identity_auto_test_third_user_info_weixin:
+    iam_auto_test_sync_profilemap:
+    identity_auto_test_ldap_new_entry:
+    identity_auto_test_ldap_new_dn:
+    iam_auto_test_sync_dpt_info: 数据源部门信息
+    iam_auto_test_sync_task_id:
+    application_auto_test_env: 创建应用用于构建动态路由
+    device_a_did: 设备A did
+    device_a_name: 设备A名称
+    admin_uid: 管理员用户id
+    admin_oid: 管理员用户open_id
+    admin_mobile: 管理员用户手机号
+    admin_email: 管理员用户邮箱
+    config_security_account_detail: 账号策略详情
+    chrome_lookup_cookie: 测试用户A请求/api/lookup接口后cookie【chrome】
+    chrome_login_headers: 测试用户A浏览器登录态
+#    client_lookup_cookie: 测试用户A请求/api/lookup接口后cookie【client】 -todo
+#    client_login_headers: 测试用户A客户端登录态 -todo
+    iam_auto_chrome_lookup_cookie: 测试iam_auto_test请求/api/lookup接口后的cookie【chrome】
+    iam_auto_chrome_login_headers: 测试iam_auto_test浏览器登录状态
+    iam_auto_user_otp: 测试动态口令登录使用
+    iam_auto_mobile_lookup_cookie: 测试iam_auto_test请求/api/lookup接口后的cookie【mobile】
+    iam_auto_mobile_lookup_headers: 测试iam_auto_test客户端登录状态
+    iam_auto_chrome_otp_lookup_cookie:
+    iam_auto_chrome_otp_lookup_headers:
+    role_a_id: 角色id
+    role_library_id: 角色库未使用角色id
+    role_library_name: 角色库未使用角色名称
+    department_a_id: 新建部门A id
+    company_a_id: 新建公司A id
+    variable_name: 新增飞连拓展字段名称
+    variable_id: 新增飞连拓展字段id
+    passport_config: 身份认证配置
+    mfa_otp_config: 动态口令配置
+  device:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_mobile: 测试用户手机号
+    apitest_user_uid: 测试用户uid
+    apitest_user_start_password: 测试用户初始密码
+    apitest_device_did: 测试设备 did
+    apitest_device_name: 设备名称
+    apitest_chrome_lookup_cookie: 测试用户请求/api/lookup接口后cookie【chrome】
+    apitest_chrome_login_headers: 测试用户浏览器登录态
+    apitest_client_lookup_cookie: 测试用户请求/api/lookup接口后cookie【client】
+    apitest_client_login_headers: 测试用户客户端登录态
+    device_ext_attr_defs_id: 自建设备拓展属性id
+    device_attr_id: 内置设备拓展属性-所属部门id
+    device_attr_type: 内置设备拓展属性-所属部门type
+    device_automatic_group_id: 设备自动分组id
+    device_manual_group_id: 设备手动分组id
+    device_strategy_key: 设备登记策略key
+    device_id: 设备id
+    device_version_key: 版本发布文件oss存储key
+    device_version_url: 版本发布文件oss存储链接
+    device_version_file_name: 版本发布安装包文件名
+    device_version_hash: 版本发布安装包hash值
+    device_version_id_pkg: 版本发布安装包版本
+    device_version_id_now: 版本发布当前安装链接版本
+    device_version_id_update: 版本发布预升级链接版本
+  software:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_a_uid: 测试用户A uid
+    apitest_user_b_uid: 测试用户B uid
+    apitest_user_a_Mac_device_did: 员工A登录Mac设备did
+    apitest_user_b_Mac_device_did: 员工B登录Mac设备did
+    apitest_user_a_Windows_device_did: 员工A登录Windows设备did
+    apitest_user_b_Windows_device_did: 员工B登录Windows设备did
+    apitest_user_a_Mac_device_id: 员工A登录Mac设备id
+    apitest_user_b_Mac_device_id: 员工B登录Mac设备id
+    apitest_user_a_Mac_device_name: 员工A登录Mac设备名称
+    apitest_user_b_Mac_device_name: 员工B登录Mac设备名称
+    apitest_user_a_Windows_device_name: 员工A登录Windows设备名称
+    apitest_user_b_Windows_device_name: 员工B登录Windows设备名称
+    apitest_user_a_Mac_login_headers: 员工A登录Mac设备名称登录态
+    apitest_user_b_Mac_login_headers: 员工B登录Mac设备名称登录态
+    apitest_user_a_Windows_login_headers: 员工A登录Windows设备登录态
+    apitest_user_b_Windows_login_headers: 员工B登录Windows设备登录态
+    software_application_item_id: 应用检测项ID
+    software_id: 应用检测项某应用id
+    software_name: 应用名称
+    software_license_item_id: 软件许可某应用ID
+    software_whitelist_id: 软件许可白名单id
+    software_package_key: 分发软件在oss存储key
+    software_package_url: 分发软件在oss存储url
+    software_package_name: 分发软件名称
+    software_package_hash: 分发软件名称hash值
+    software_library_id: 分发软件id
+    software_task_id: 软件分发任务id
+    software_mac_package_key: mac软件安装包在oss存储key
+    software_mac_package_url: mac软件安装包件在oss存储url
+    software_mac_package_name: mac软件安装包件名称
+    software_mac_package_hash: 分发软件名称hash值
+    software_mac_goods_id: 软件库mac软件id
+    software_win_goods_id: 软件库win软件id
+  application:
+    admin_uid: 管理员用户id
+    admin_oid: 管理员用户open_id
+    admin_mobile: 管理员用户手机号
+    admin_email: 管理员用户邮箱
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_mobile: 测试用户手机号
+    apitest_user_uid: 测试用户uid
+    apitest_user_start_password: 测试用户初始密码
+    apitest_device_did: 测试设备 did
+    apitest_device_name: 设备名称
+    apitest_chrome_lookup_cookie: 测试用户请求/api/lookup接口后cookie【chrome】
+    apitest_chrome_login_headers: 测试用户浏览器登录态
+    apitest_client_lookup_cookie: 测试用户请求/api/lookup接口后cookie【client】
+    apitest_client_login_headers: 测试用户客户端登录态
+    app_oauth2_id:
+    app_oidc_id:
+    app_cas_id:
+    app_saml_id:
+    app_ldap_id:
+    app_oidc_client_id:
+    app_oidc_client_secret:
+    app_oauth_client_id:
+    app_oauth_client_secret:
+    app_ldap_client_id:
+    app_ldap_client_secret:
+  vpn:
+  sdwan:
+  wifi:
+  baseline:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_a_uid: 测试用户A uid
+    apitest_user_b_uid: 测试用户B uid
+    apitest_user_a_Mac_device_did: 员工A登录Mac设备did
+    apitest_user_b_Mac_device_did: 员工B登录Mac设备did
+    apitest_user_a_Mac_device_id: 员工A登录Mac设备id
+    apitest_user_b_Mac_device_id: 员工B登录Mac设备id
+    apitest_user_a_Mac_device_name: 员工A登录Mac设备名称
+    apitest_user_b_Mac_device_name: 员工B登录Mac设备名称
+    apitest_user_a_Mac_login_headers: 员工A登录Mac设备名称登录态
+    apitest_user_b_Mac_login_headers: 员工B登录Mac设备名称登录态
+    baseline_application_item_id: 应用检测项ID
+    baseline_application_item_info: 应用检测项详情信息
+    application_item_name: 应用检测项名称
+    application_item_mac_id: 应用检测项mac版本id
+    application_item_mac_software_id: 应用检测项mac版本software_id
+    application_item_windows_id: 应用检测项Windows版本id
+    application_item_windows_software_id: 应用检测项Windows版本software_id
+    application_item_linux_id: 应用检测项linux版本id
+    application_item_linux_software_id: 应用检测项linux版本software_id
+    process_item_name_mac: mac进程检测项名称
+    process_item_name_linux: linux进程检测项名称
+    process_item_name_windows: windows进程检测项名称
+    process_item_id_mac: mac进程检测项id
+    process_item_id_linux: linux进程检测项id
+    process_item_id_windows: windows进程检测项id
+    process_item_hash_id_mac: mac进程检测项hash_id
+    process_item_hash_id_linux: linux进程检测项hash_id
+    process_item_hash_id_windows: windows进程检测项hash_id
+    process_item_signature_mac: mac进程检测项signature
+    process_item_signature_linux: linux进程检测项signature
+    process_item_signature_windows: windows进程检测项signature
+  patch:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_a_uid: 测试用户A uid
+    apitest_user_b_uid: 测试用户B uid
+    apitest_user_a_Windows_device_did: 员工A登录Windows设备did
+    apitest_user_b_Windows_device_did: 员工B登录Windows设备did
+    apitest_user_a_Windows_device_id: 员工A登录Windows设备id
+    apitest_user_b_Windows_device_id: 员工B登录Windows设备id
+    apitest_user_a_Windows_device_name: 员工A登录Windows设备名称
+    apitest_user_b_Windows_device_name: 员工B登录Windows设备名称
+    apitest_user_a_Windows_login_headers: 员工A登录Windows设备登录态
+    apitest_user_b_Windows_login_headers: 员工B登录Windows设备登录态
+  dlp:
+  antivirus:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_mobile: 测试用户手机号
+    apitest_user_uid: 测试用户uid
+    antivirus_strategy_key: 病毒策略strategy_key
+  dynamic:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_mobile: 测试用户手机号
+    apitest_user_uid: 测试用户uid
+    apitest_user_start_password: 测试用户初始密码
+    apitest_device_did: 测试设备 did
+    apitest_device_name: 设备名称
+    apitest_chrome_lookup_cookie: 测试用户请求/api/lookup接口后cookie【chrome】
+    apitest_chrome_login_headers: 测试用户浏览器登录态
+    apitest_client_lookup_cookie: 测试用户请求/api/lookup接口后cookie【client】
+    apitest_client_login_headers: 测试用户客户端登录态
+  it:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_d_uid: 测试用户D uid
+    apitest_user_d_Mac_device_did: 员工D登录Mac设备did
+    apitest_user_d_Mac_device_id: 员工D登录Mac设备id
+    apitest_user_d_Mac_device_name: 员工D登录Mac设备名称
+    apitest_user_d_Mac_login_headers: 员工D登录Mac设备名称登录态
+  configuration:
+    config_logout_disable: 是否开启防退出
+    config_uninstall_disable: 是否开启应用防卸载
+    config_prevent_terminate_process: 防退出、防卸载配置项
+    config_task_bar_exit: 防退出、防卸载配置项
+    config_uninstall_type: 防退出、防卸载配置项
+    config_expiry_date_type: 防退出、防卸载配置项
+    config_windows_drive_switch: Windows 端驱动总开关配置
+  integration:
+  settings:
+    root_department_id: 根部门id
+    root_department_path: 根部门名称
+    apitest_user_mobile: 测试用户手机号
+    apitest_user_uid: 测试用户uid
+    settings_mobile_banner_img_url: 移动端展示图片
+    settings_pc_banner_img_url: 桌面端展示图片
+    settings_banner_name: 新建banner名字
+    settings_banner_id: 新建banner id
+  license:
+  versions:
+order:
+  third:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    # 数据源同步-LDAP
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 30
+    - test_api_admin_sync2_consume: 关闭已打开数据源同步配置 - 31
+    - test_api_admin_sync2_profiles: 获取数据源配置模板-LDAP -32
+    - test_api_admin_profilemap_create: 创建数据源并拉取映射关系 - 33
+    - test_api_admin_sync2_consume: 创建同步配置模板-初始化 - 34
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 35
+    - test_api_admin_sync2_root: 获取三方数据源根部门信息 - 36
+    - test_api_admin_sync2_consume: 创建同步配置模板-最终保存 - 37
+    - test_api_admin_sync2_consume: 更新数据源同步开关状态为开 - 38
+    - test_api_admin_sync2_start: 开始数据源同步任务 - 39
+    - test_api_admin_sync2_start: 开始数据源同步任务[同步增删改] - 40
+    - test_api_organization_search: 搜索LDAP【新增人员】 - 41
+    - test_api_organization_search: 搜索LDAP【更新人员】 - 42
+    - test_api_organization_search: 搜索LDAP【删除人员】 - 43
+    - test_api_admin_sync2_consume: 清理LDAP【删除同步源】 - 44
+    # 数据源同步-飞书
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 51
+    - test_api_admin_sync2_consume: 关闭已打开数据源同步配置 - 52
+    - test_api_admin_profilemap_create: 创建数据源并拉取映射关系 - 54
+    - test_api_admin_sync2_consume: 创建同步配置模板-初始化 - 55
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 56
+    - test_api_admin_sync2_root: 获取三方数据源根部门信息 - 57
+    - test_api_admin_sync2_consume: 创建同步配置模板-最终保存 - 58
+    - test_api_admin_sync2_consume: 更新数据源同步开关状态为开 - 59
+    - test_api_admin_sync2_start: 开始数据源同步任务 - 60
+    - test_api_admin_sync2_start: 开始数据源同步任务[同步增删改] - 61
+    - test_api_organization_search: 搜索feishu【新增人员】 - 62
+    - test_api_organization_search: 搜索feishu【更新人员】 - 63
+    - test_api_organization_search: 搜索feishu【删除人员】 - 64
+    # 数据源同步-飞书-非根部门
+    - test_api_admin_sync2_consume: 更新数据源同步部门为【非根】 - 65
+    - test_api_admin_sync2_start: 开始数据源同步任务[同步增删改] - 66
+    - test_api_organization_search: 搜索feishu【新增人员】 - 67
+    - test_api_organization_search: 搜索feishu【更新人员】 - 68
+    - test_api_organization_search: 搜索feishu【删除人员】 - 69
+    - test_api_admin_sync2_consume: 清理feishu【删除同步源】 - 70
+    # 数据源同步-微信
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 81
+    - test_api_admin_sync2_consume: 关闭已打开数据源同步配置 - 82
+    - test_api_admin_profilemap_create: 创建数据源并拉取映射关系 - 83
+    - test_api_admin_sync2_consume: 创建同步配置模板-初始化 - 84
+    - test_api_admin_sync2_profiles: 获取数据源同步配置详情 - 85
+    - test_api_admin_sync2_root: 获取三方数据源根部门信息 - 86
+    - test_api_admin_sync2_consume: 创建同步配置模板-最终保存 - 87
+    - test_api_admin_sync2_consume: 更新数据源同步开关状态为开 - 88
+    - test_api_admin_sync2_start: 开始数据源同步任务 - 89
+    - test_api_admin_sync2_start: 开始数据源同步任务[同步增删改] - 90
+    - test_api_organization_search: 搜索weixin【新增人员】 - 91
+    - test_api_organization_search: 搜索weixin【更新人员】 - 92
+    - test_api_organization_search: 搜索weixin【删除人员】 - 93
+    - test_api_organization_search: 清理weixin【删除同步源】 - 100
+  identity:
+    - test_api_v1_config_agreement: 验证客户端是否拉取隐私协议 - 1
+    - test_api_v2_config_passport_detail: 获取身份认证配置 - 1
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_get: 获取当前登录账号【管理员】信息 - 1
+    - test_api_user_add: 创建新用户 - 2
+    - test_api_organization_list: 获取部门列表 - 3
+    - test_api_organization_search: 搜索部门/员工 - 4
+    - test_api_v2_user_info: 获取用户详情 - 5
+    - test_api_config_security_account_detail: 获取账号策略详情 - 6
+    - test_api_config_security_account_update: 更新账号策略详情 - 7
+    - test_api_login_setting: 无需认证的-获取忘记密码的配置 - 7
+    - test_api_login_setting: 无需认证的-获取忘记密码的配置 - 7
+    - test_api_tpslogin_link: 无需认证的-获取三方登录信息的接口 - 7
+    - test_api_lookup: 查询登录账号是否存在[密码验证登录使用] - 8
+    - test_api_login: 登录账号 - 9
+    - test_api_first_password_reset: 首次密码登录重置密码 - 10【todo】
+    - test_api: 需要登录认证-获取用户基础信息 - 10
+    - test_api_v1_localserver_setting: 需要登录认证-获取localserver配置信息 - 10
+    - test_api_info_me: 获取当前登录用户信息 - 10
+    - test_api_v2_config_passport_update: 身份认证配置 - 10
+    - test_api_lookup: 查询登录账号是否存在[邮箱验证登录使用] - 11
+    - test_api_login_code_send: 发送登录账户邮箱验证码 - 12
+    - test_api_login_code_verify: 使用邮箱验证码登录账户 - 13
+    - test_api_lookup: 查询登录账号是否存在[动态口令登录使用] - 15
+    - test_api_user_otp: 获取otp码 - 16
+    - test_api_login_code_verify: 使用动态口令登录账户 - 17
+    - test_api_lookup: 查询登录账号是否存在[LDAP三方登录使用] - 18
+    - test_api_login: 登录账号[LDAP三方登录] - 19
+    - test_api_logout: 登出当前登录用户 - 20
+    - test_api_device_list: 验证用户是否登出成功 - 21
+    - test_api_role_library_list: 获取角色库列表 - 1998
+    - test_api_role_add: 新增角色 - 1999
+    - test_api_admin_manage_set: 设置超级管理员 - 1999
+    - test_api_organization_add: 新增公司/部门 - 1999
+    - test_api_profilemap_attributes_append: 新增飞连拓展字段 - 1999
+    - test_api_profilemap_mapping_append: 新增飞连拓展字段和三方数据源映射关系 - 1999【todo】
+    - test_api_role_library_update: 从角色库新增角色 - 1999【todo】
+    - test_api_tpslogin_create: 配置三方登录信息 - 1999【todo】
+    - test_api_role_permission_add: 授予某角色某应用权限 - 2000【todo】
+    - test_api_role_member_add: 某角色下添加成员 - 2002
+    - test_api_profilemap_attributes_list: 获取飞连拓展字段列表 - 2003
+    - test_api_admin_manage_detail: 查看管理员详细信息 - 2999
+    - test_api_role_list: 获取角色列表 - 2999
+    - test_api_admin_manage_list: 获取管理员列表 - 2999
+    - test_api_organization_detail_summary: 获取b部门/公司详细信息 - 2999
+    - test_api_profilemap_detail: 获取同步字段映射详情 - 2999【todo】
+    - test_api_role_member_detail: 获取角色成员详情 - 2999
+    - test_api_role_permission_detail: 获取角色应用详情 - 2999
+    - test_api_sync2_log_detail: 获取三方数据源同步日志详情 - 2999【todo】
+    - test_api_sync2_profiles: 获取三方数据源字段配置详情 - 2999
+    - test_api_sync2_start: 开始同步三方数据源 - 2999【todo】
+    - test_api_user_info: 获取用户信息详情 - 2999
+    - test_api_sync2_statistics: 获取同步三方数据源进度状态 - 2999
+    - test_api_tpslogin_list: 获取三方登录配置列表 - 2999
+    - test_api_user_device_list: 获取用户设备列表 - 2999
+    - test_api_user_listdeparts: 获取某部门下子部门/用户详细信息列表 - 2999
+    - test_api_user_template_download: 下载批量新增用户模版 - 2999
+    - test_api_v2_audit_admin_list: 查看管理员操作日志 - 2999
+    - test_api_v2_audit_user_enum_list: 查看飞连版本列表 - 2999
+    - test_api_v2_audit_user_list: 查看用户操作日志 - 2999
+    - test_api_v2_mfa_otp_check_link: 三方otp联通性检测 - 2999
+    - test_api_v2_mfa_otp_default_configs: 获取otp默认配置项 - 2999
+    - test_api_v2_mfa_otp_detail: 获取otp默认配置详情 - 2999
+    - test_api_v2_organization_list: 获取部门下子部门/用户列表 - 2999
+    - test_api_v2_user_list: 获取部门下用户列表 - 2999
+    - test_api_v2_user_structure: 获取用户属性列表 - 2999
+    - test_api_v2_user_sync_config: 查看当前是否能编辑 - 2999
+    - test_api_profilemap_attributes_update: 更新飞连拓展字段列表 - 3999
+    - test_api_organization_move: 移动部门 - 3001
+    - test_api_organization_update: 更新部门信息 - 3002
+    - test_api_user_invite: 邀请用户激活 - 3003
+    - test_api_user_disable: 暂停账号使用 - 3004
+    - test_api_user_enable: 恢复账号使用 - 3005
+    - test_api_user_reset_pass: 用户重置密码 - 3006
+    - test_api_user_update: 更新用户信息 - 3007
+    - test_api_role_update: 更新角色信息 - 3999
+    - test_api_user_move: 用户变更部门 - 3999
+    - test_api_sync2_close: 关闭同步任务 - 3999【todo】
+    - test_api_user_mfa_switch: 账号是否开启二次认证 - 3999
+    - test_api_user_offline: 用户离职 - 3999
+    - test_api_v2_mfa_otp_add_or_update: 更新otp默认配置 - 3999
+    - test_api_role_member_delete: 移除角色下用户 - 4998
+    - test_api_role_permission_delete: 移除授权角色的应用 - 4998【todo】
+    - test_api_role_delete: 删除角色 - 4999
+    - test_api_admin_manage_delete: 移除管理员权限 - 4999
+    - test_api_organization_delete: 删除公司/部门 - 4999
+    - test_api_profilemap_attributes_delete: 删除拓展字段 - 4999
+    - test_api_profilemap_mapping_delete: 删除同步字段映射详情  - 4999【todo】
+    - test_api_user_delete: 删除用户  - 5999
+  device:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_v2_user_info: 获取用户详情 - 3
+    - test_api_lookup: 查询登录账号是否存在 - 4
+    - test_api_login: 登录账号 - 5
+    - test_api_admin_asset_device_build_in_attr_defs: 获取内置属性列表 - 5
+    - test_api_admin_asset_device_groups_create: 创建设备分组 - 6
+    - test_api_admin_v2_device_register_strategy: 创建终端登记策略 - 7
+    - test_api_setting: 客户端获取用户设置 - 10
+    - test_api_device_report: 需要登录认证-上传设备基础信息 - 11
+    - test_api_device_ticket_setting: 需要登录认证-获取工单配置 - 12
+    - test_api_device_v2_ticket_setting: 需要登录认证-获取终端登记工单配置 - 12
+    - test_api_emgr_device_report: 需要登录认证-上传设备基础信息 - 13
+    - test_api_emgr_v1_device_runtime_report: 需要登录认证-上传设备基础信息 - 13
+    - test_api_v1_cfg_software_info_report: 需要登录认证-上传设备软件信息 - 13
+    - test_api_v1_cfg_software_info_report_v2: 需要登录认证-上传设备软件信息 - 13
+    - test_api_device_v2_tickets: 需要登录认证-提交终端登记工单 - 14
+    - test_api_admin_v1_upload_oss: 上传版本发布安装包文件 - 1998
+    - test_api_version_add: 创建版本发布新版本 - 1999
+    - test_api_admin_asset_device_ext_attr_defs_post: 创建拓展属性 - 1999
+    - test_api_admin_asset_device_app_ver_list: 获取app版本列表 - 2999
+    - test_api_admin_asset_device_brand_list: 获取设备品牌列表 - 2999
+    - test_api_admin_asset_device_ext_attr_defs_get: 获取拓展属性 - 2999
+    - test_api_admin_asset_device_os_list: 获取设备操作系统列表 - 2999
+    - test_api_admin_asset_device_fuzz_search: 搜索设备 - 2999
+    - test_api_admin_asset_device_search: 搜索终端设备 - 2998
+    - test_api_admin_asset_device_detail: 查看某终端设备详细信息 - 2999
+    - test_api_admin_v2_device_register_strategy_get: 获取终端登记策略列表 - 2999
+    - test_api_admin_v2_device_register_strategy_key_get: 获取某一登记策略详情 - 2999
+    - test_api_admin_v2_device_register_ticket: 获取审批记录列表 - 2999
+    - test_api_version_list: 获取版本发布版本列表 - 2998
+    - test_api_admin_version_id_scope: 获取版本配置详情 - 2999
+    - test_api_admin_v2_device_register_strategy_key_post: 更新登记策略 - 3990
+    - test_api_setting: 客户端获取用户设置 - 3991
+    - test_api_device_v2_ticket_setting: 需要登录认证-获取工单配置 - 3993
+    - test_api_admin_asset_device_ext_attr_defs_id_update: 更新拓展属性 - 3999
+    - test_api_admin_asset_device_ext_attr_defs_id_delete: 删除拓展属性 - 4999
+    - test_api_admin_asset_device_groups_id_delete: 删除设备分组 - 4999
+    - test_api_version_update:  更新版本信息 - 4997
+    - test_api_version_update_status:  更新版本信息上线状态 - 4998
+    - test_api_version_delete:  删除版本发布某一版本 - 4998
+    - test_api_admin_asset_device_groups_id_delete: 删除某一登记策略详情 - 4999
+  software:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号并登录客户端 - 2
+    - test_api_v1_software_stat_status_switch: 开启软件统计开关 - 6
+    - test_api_admin_v1_software_license_enable_update: 修改许可启用范围为测试账号A - 6
+    - test_api_admin_v1_software_license_sync_status_update: 开启软件统计开关 - 7
+    - test_api_setting: 客户端获取用户设置 - 10
+    - test_api_v1_cfg_software_info_report: 需要登录认证-上传设备软件信息 - 13
+    - test_api_v1_cfg_software_info_report_v2: 需要登录认证-上传设备软件信息 - 13
+    - test_api_admin_v2_dynamic_security_baseline_application_items_create: 创建应用检测项配置 - 1996
+    - test_api_admin_v1_software_license_batch_upsert: 添加许可软件 - 1997
+    - test_api_admin_v1_software_license_update_id: 更新某软件许可配置 - 1998
+    - test_api_admin_v1_software_license_scope_update_id: 配置某软件许授权范围为用户A - 1999
+    - test_api_emgr_v1_cfg_software_info_config: 获取软件统计的配置 - 2999
+    - test_api_emgr_software_license_config: 用户a和b获取软件统计的配置并校验配置准确性,用户a可用，用户b不可用 - 2999
+    - test_api_admin_v2_sheet_download: 软件统计导出数据 - 2999
+    - test_api_admin_v1_software_license_show: 查看软件许可软件列表 - 2999
+    - test_api_admin_v1_software_license_enable_show: 查看软件许可启用范围 - 2999
+    - test_api_admin_v2_dynamic_security_baseline_application_items_id: 查看某项应用检测项配置详情 - 2999
+    - test_api_admin_v1_software_license_enable_update: 修改许可启用范围为全部 - 3991
+    - test_api_emgr_software_license_config: 用户b获取软件统计的配置并校验配置准确性，用户b被禁用该软件 - 3992
+    - test_api_admin_v2_whitelist_update: 配置用户B加入软件许可白名单 - 3993
+    - test_api_admin_v2_whitelist_list: 查看白名单列表，获取白名单id - 3994
+    - test_api_emgr_software_license_config: 用户b获取软件统计的配置并校验配置准确性，用户b可用该软件 - 3994
+    - test_api_admin_v2_whitelist_delete: 配置用户B移除软件许可白名单 - 3995
+    - test_api_emgr_software_license_config: 用户b获取软件统计的配置并校验配置准确性，用户b被禁用该软件 - 3996
+    - test_api_admin_v1_software_license_scope_update_id: 配置某软件许授权范围为用户A和B - 3997
+    - test_api_emgr_software_license_config: 用户b获取软件统计的配置并校验配置准确性，用户b可用该软件 - 3998
+    - test_api_admin_v2_dynamic_security_baseline_application_items_id_delete: 删除某项应用检测项配置 - 94999
+    - test_api_admin_asset_device_fuzz_search: 搜索设备获取设备id - 1990
+    - test_api_admin_v1_upload_oss: 上传软件包到oss - 1991
+    - test_api_admin_v1_software_library_create: 添加要进行软件分发的软件 - 1992
+    - test_api_admin_v2_appstore_goods: 软件库添软件安装包 - 1992
+    - test_api_admin_v1_software_library_list: 查看软件分发列表，获取分发软件id - 1993
+    - test_api_admin_v1_software_task_batch_create: 创建软件分发任务 - 1994
+    - test_api_admin_v1_software_task_list: 查看软件分发任务列表，获取分发任务id - 1995
+    - test_api_v1_cfg_software_push_reply: 上报软件分发的推送成功响应 - 1996
+    - test_api_admin_v1_software_task_detail: 校验软件分发是否成功 - 2999
+    - test_api_admin_v1_software_task_detail: 校验软件库软件配置是否符合预期 - 2999
+    - test_api_admin_v1_software_task_opt_delete: 删除软件分发任务 - 4995
+    - test_api_admin_v2_appstore_goods_id_delete: 删除软件库软件 - 4995
+    - test_api_admin_v1_software_library_batch_drop: 删除分发软件 - 4999
+  application:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_v2_user_info: 获取用户详情 - 5
+    - test_api_lookup: 查询登录账号是否存在 - 8
+    - test_api_login: 登录账号 - 9
+    - test_api_application_group: 获取应用分组 - 12999
+    - test_api_get: 已登录管理员账号-获取当前登录账号【管理员】信息 - 1
+    - test_api_admin_v1_application_list: 应用管理-查询应用 - 11
+    - test_api_admin_v1_application_add: 应用管理-创建应用 - 12
+    - test_api_admin_application_permission_add: 应用管理-授权应用 - 13
+    - test_api_admin_v1_application_detail: 应用管理-查询应用 - 14
+    - test_api_admin_v1_application_delete: 应用管理-删除应用 - 15
+  vpn:
+  sdwan:
+  wifi:
+  baseline:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_v2_user_info: 获取用户详情 - 5
+    - test_api_lookup: 查询登录账号是否存在 - 8
+    - test_api_login: 登录账号 - 9
+    - test_api_login: 登录账号 - 9
+    - test_api_setting: 登录账号 - 10
+    - test_api_emgr_device_report: 上报设备信息 - 11
+    - test_api_admin_v2_dynamic_security_baseline_process_items_create: 创建进程检测项配置 - 1997
+    - test_api_admin_v2_dynamic_security_baseline_process_items: 获取进程检测项配置 - 1998
+    - test_api_admin_v2_dynamic_security_baseline_application_items_create: 创建应用检测项配置 - 1998
+    - test_api_admin_v2_dynamic_security_baseline_strategy_create: 新增基线管控策略- 1999
+    - test_api_admin_v2_config_security_detection: 获取基线检测项配置 - 2999
+    - test_api_admin_v2_dynamic_security_baseline_strategy_list: 获取基线管控策略列表- 2999
+    - test_api_admin_v2_dynamic_security_baseline_application_items: 获取应用检测项配置 - 2999
+    - test_api_admin_v2_dynamic_security_baseline_application_items_id: 查看某项应用检测项配置详情 - 2999
+    - test_api_admin_v2_config_security_detection_update: 更新基线检测项配置 - 3999
+    - test_api_admin_v2_dynamic_security_baseline_process_items_id: 更新某项进程检测项配置 - 3999
+    - test_api_esec_config_baseline: 获取基线检测配置  - 2999
+    - test_api_esec_config_process_ctl_policy: 获取进程管控配置  - 2999
+    - test_api_esec_config_software_ctl_policy: 获取软件管控策略  - 2999
+    - test_api_esec_event_baseline: 上报基线检测结果  - 3001
+    - test_api_esec_event_process: 上报进程检测黑白名单数据  - 3001
+    - test_api_esec_event_software_alarm: 软件检测告警事件上报  - 3001
+    - test_api_admin_v2_dynamic_security_baseline_events: 获取基线事件列表并校验是否上报成功 - 92999
+    - test_api_admin_v2_dynamic_security_baseline_strategy_key_delete: 删除基线管控策略- 94998
+    - test_api_admin_v2_dynamic_security_baseline_application_items_id_delete: 删除某项应用检测项配置 - 94999
+    - test_api_admin_v2_dynamic_security_baseline_process_items_id_delete: 删除某项进程检测项配置 - 94999
+  patch:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号并登录客户端 - 2
+    - test_api_admin_asset_device_fuzz_search: 搜索设备获取设备id - 3
+    - test_api_admin_v1_patch_manager: 打开补丁管理开关 - 4
+    - test_api_admin_v1_patch_manager_config_automatic_repair_update: 打开补丁管理开关 - 5
+    - test_api_admin_v1_patch_manager_config_whitelist_update: 配置自动修复策略白名单 - 6
+  dlp:
+  antivirus:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_v2_dynamic_security_anti_virus_strategy_create: 创建防病毒策略 - 1999
+    - test_api_admin_v2_dynamic_security_anti_virus_strategy_list: 查看防病毒策略列表 - 2999
+    - test_api_v2_dynamic_security_anti_virus_strategy_delete: 删除防病毒策略 - 4999
+  dynamic:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_v2_user_info: 获取用户详情 - 5
+    - test_api_lookup: 查询登录账号是否存在 - 8
+    - test_api_login: 登录账号 - 9
+    - test_api_esec_config_dynamic_security_trigger: 获取动态控制触发配置 - 12999
+  it:
+  configuration:
+    - test_api_config_email_update: 配置/更新邮箱配置 - 1999
+    - test_api_config_sms_update: 配置短信网关相关信息 - 1999
+    - test_api_config_email_detail: 通知模版-获取邮箱配置 - 2999
+    - test_api_config_sms_detail: 获取当前短信配置 - 2999
+    - test_api_v2_notify_template_list: 通知模版-获取模版列表 - 2999
+    - test_api_v2_config_windows_blue_screen_alert_config: 获取windows蓝屏告警开关配置 - 2999
+    - test_api_admin_v2_config_uninstall_detail: 获取windows蓝屏告警开关配置 - 2999
+    - test_api_config_email_test: 通知模版-发送测试邮件[验证码] - 3999
+    - test_api_config_sms_test: 通知模版-发送测试短信[验证码] - 3999
+    - test_api_v2_config_uninstall_update_post: 更新客户端防卸载设置 - 3999
+    - test_api_v2_config_windows_drive_switch: 获取Windows驱动开关 - 3999
+  integration:
+  settings:
+    - test_api_admin_config_tenant_detail: 获取当前租户信息 - 1
+    - test_api_user_add: 创建测试账号 - 2
+    - test_api_upload_img: 上传banner展示图片 - 1998
+    - test_api_upload_img: 上传banner展示图片 - 1998
+    - test_api_v2_config_tenant_culture_banner_create: 创建banner - 1999
+    - test_api_alert_receiver_list: 获取管理员操作告警通知方式 - 2999
+    - test_api_alert_rule_list: 获取管理员操作告警规则 - 2999
+    - test_api_v2_config_tenant_culture_banner_list: 查看banner列表 - 2999
+    - test_api_v2_config_tenant_culture_banner_update: 更新banner配置 - 3999
+    - test_api_v2_config_tenant_culture_banner_update_status: 查看banner列表 - 3999
+    - test_api_v2_config_tenant_culture_banner_delete: 删除banner - 4999
+  license:
+  versions:
+
+
+
+

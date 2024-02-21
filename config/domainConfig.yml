@@ -1,0 +1,43 @@
+staging.feilian.cn:
+  admin_user: admin@feilian.cn
+  admin_pwd: corplink@dm1n$
+  version: saas
+  fe_port: 443
+  admin_port: 443
+corplink-boe.ifeilian.cn:
+  admin_user: admin@feilian.local
+  admin_pwd: ub4MPrGDeU
+  version: saas
+  fe_port: 443
+  admin_port: 443
+test-apitest.ifeilian.cn:
+  admin_user: admin@feilian.local
+  admin_pwd: xgnW561hY9
+  version: saas
+  fe_port: 443
+  admin_port: 443
+apitest.feilian.cn:
+  admin_user: apitest@feilian.local
+  admin_pwd: xJWtBPhB99
+  version: saas
+  fe_port: 443
+  admin_port: 443
+test.ifeilian.cn:
+  admin_user: admin@feilian.local
+  admin_pwd: dmxT5IOq1kqg
+  version: private
+  fe_port: 443
+  admin_port: 8443
+ha-staging.ifeilian.cn:
+  admin_user: admin@feilian.local
+  admin_pwd: CerwFUUkoZtn
+  version: private
+  fe_port: 10443
+  admin_port: 8443
+seal-admin-staging.bytedance.net:
+  admin_user: admin@feilian.local
+  admin_pwd: j5L0SByIeF8r
+  version: seal
+  fe_port: 443
+  admin_port: 443
+  other: seal-staging.bytedance.net

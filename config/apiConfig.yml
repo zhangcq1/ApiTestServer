@@ -1,0 +1,11 @@
+CorpLink:
+  # 首次会根据接口数据包生成，可自行更改或添加新配置，所有配置将用于公共关联值。
+  timeout: 10
+  scheme: https
+  fe_port: 443
+  admin_port: 8443
+  host: test.ifeilian.cn
+  other: 
+  headers:
+    cookie: csrf-token=svNXcBqTGjnjNXaoUMUNRUnCLpQeVNDQTdmUOBhE; session=MTcwNjA4ODA5N3xOd3dBTkVkV1MweGFXRFJZTTFwSVFWSkhURTh6U1ZkU1NrZFVOa3hMVTBSWFVqTXpOMGxEUlVKYVRVVktWVk5hVmsxTlRrTlVORUU9fJcpDC4DQBv5FuD0j4oMpDtfHl-NPtfe3pIHa6Dhe4GW
+    csrf-token: svNXcBqTGjnjNXaoUMUNRUnCLpQeVNDQTdmUOBhE

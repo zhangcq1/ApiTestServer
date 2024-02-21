@@ -1,0 +1,37 @@
+test_info:
+  title: admin
+  host: ${host}
+  scheme: ${scheme}
+  method: GET
+  address: :${admin_port}/api/admin/config/tenant/detail
+  address_saas: :${admin_port}/api/admin/config/tenant/detail
+  mime_type:
+  headers: ${headers}
+  timeout: ${timeout}
+  file: false
+  cookies: false
+  premise: false
+test_case:
+- summary: 测试【/api/admin/config/tenant/detail】接口
+  describe: 已登录管理员账号-获取当前租户信息
+  script:
+  order: 1
+  markers:
+  - saas
+  - private
+  - seal
+  set_cache:
+    root_department_id: response_body:$..root_dept_id
+    root_department_path: response_body:$..tenant_full_name
+  replace_cache:
+  parameter:
+    language: zh-CN
+    os: web
+  check_body:
+    check_type: check_json
+    expected_code: 200
+    expected_result:
+      code: 0
+      action: ''
+      message: ''
+      data:
